@@ -1,0 +1,167 @@
+{% load static%}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>PORFOLIO</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/full-width-pics.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="{% static '/css/main1.css' %}" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Porfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header - set the background image for the header in the line below -->
+  <header class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1076');">
+<!--<img class="img-fluid d-block mx-auto" src="http://placehold.it/200x200&text=Logo" alt="">-->
+    <img class="img-fluid d-block mx-auto" id="profile-pic" src="{% static 'images1/profile.jpg' %}" alt="Profile picture">
+                      
+  </header>
+
+
+  <br>
+
+  <div class='container'>
+
+    <!--First ROW-->
+    <div class='row'>
+       
+        <div class="col-md-3">
+
+            <div class="card card-body h-100 border-info" >
+            <h1>Hi I'm {{name}}</h1>
+            <p>I am always happy! </p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="card card-body h-100 border-info">
+         
+            <h1>My lastname is {{lastName}}</h1>
+            <p>I'm smart girl and goal-oriented! </p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <!--Second ROW-->
+    <div class='row'>
+        <div class="col-md-6">
+            <div class="card card-body h-100 border-info">
+                <h1>I'm {{nationality}}. We are from Uzbekistan</h1>
+                <p>I have a sister and her name is {{sister}}</p>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-6">
+            <div class='card card-body h-100 border-info'>
+            <h1>I was born on {{DOB}} and I am 5 years old.</h1>
+            <p>My mom's name is {{mom}} and dad's name {{dad}}</p>
+            </div>
+        </div>
+    </div>
+ 
+
+    <!--THIRD ROW-->
+    <div class='row'>
+     
+    </div>
+ 
+
+</div>
+
+
+
+  <!-- Content section -->
+  <section class="py-5">
+    <div class="container">
+        <h1>My daily activities.</h1>
+        <p>Wake up early and do my bed. Have a quick bath and clean my teeth. 
+        Do quick breakfast with my family. Then I'll do my math and some workout.
+        And go out with my sister Aisha and my mom to walk.
+        </p>
+      </div>
+  </section>
+
+  <!-- Image element - set the background image for the header in the line below -->
+  <div class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1081');">
+    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+    <div style="height: 200px;"></div>
+  </div>
+
+  <!-- Content section -->
+  <section class="py-5">
+    <div class="container">
+        <h1>My Hobbies</h1>
+        <p>I like to play my toys with my sister {{sister}} and watch some cartoons with her before bed everyday.</p>
+   </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>

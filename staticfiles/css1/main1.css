@@ -1,0 +1,25 @@
+body{
+    background-color: aqua;
+}
+
+h1{
+    color: brown;
+}
+
+.img-fluid d-block mx-auto{
+
+}
+
+
+#img-fluid{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .header .picture {
+    width: 185px;
+    border-radius: 50%;
+  }
